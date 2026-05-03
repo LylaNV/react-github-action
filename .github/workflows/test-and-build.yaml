@@ -9,8 +9,8 @@ jobs:
             - name: installing node
               uses: actions/setup-node@v6
               with:
-                node_version: '24.14.0'
+                node-version: '24.14.0'
             - name: installing dependencies
-              run: npm ci
+              run: npm install
             - name: testing app
               run: npm test
