@@ -5,8 +5,10 @@ jobs:
         runs-on: ubuntu-slim
         steps:
             - name: getting my code first
+              # pulls your repo into the runner so the workflow can access it
               uses: actions/checkout@v6
             - name: installing node
+              # installs Node.js version 24.14.0
               uses: actions/setup-node@v6
               with:
                 node-version: '24.14.0'
