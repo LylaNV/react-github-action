@@ -4,12 +4,14 @@ name: Testing and Building my app
 #   pull_request:
 #     types: [opened, closed]
 #   workflow_dispatch:  
+# on: 
+#   push:
+#     branches: 
+#       - main
+#     paths:
+#       - '**/*.js'
 on: 
-  push:
-    branches: 
-      - main
-    paths:
-      - '**/*.js'
+  push
 jobs:
     test:
         runs-on: ubuntu-slim
